@@ -1,0 +1,758 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#bfe8ff">
+  <meta name="description" content="A little piece of the universe that James made for Baby Julie.">
+  <title>A Sky That Learned to Love · For Julie</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23286A9E' d='M12 21C10 19 2 14 2 8a5 5 0 0 1 10-2 5 5 0 0 1 10 2c0 6-8 11-10 13Z'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body data-chapter="welcome">
+  <a class="skip-link" href="#main">Skip to the story</a>
+
+  <svg class="svg-library" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="heart-blue" x1="15%" y1="2%" x2="80%" y2="100%">
+        <stop stop-color="#f7fdff"/>
+        <stop offset=".23" stop-color="#a5dcff"/>
+        <stop offset=".57" stop-color="#5ba8ed"/>
+        <stop offset=".84" stop-color="#437cca"/>
+        <stop offset="1" stop-color="#8ba6f4"/>
+      </linearGradient>
+      <linearGradient id="heart-rim" x2=".85" y2="1">
+        <stop stop-color="#fff"/>
+        <stop offset=".5" stop-color="#e7edff"/>
+        <stop offset="1" stop-color="#acc6ff"/>
+      </linearGradient>
+      <linearGradient id="cloud-face" x1="46%" y1="0%" x2="48%" y2="100%">
+        <stop stop-color="#fff"/>
+        <stop offset=".39" stop-color="#f8fdff"/>
+        <stop offset=".75" stop-color="#d9edff"/>
+        <stop offset="1" stop-color="#b4d5f1"/>
+      </linearGradient>
+      <linearGradient id="cloud-satin" x1="0%" y1="4%" x2="64%" y2="100%">
+        <stop stop-color="#fff"/>
+        <stop offset=".6" stop-color="#edf8ff"/>
+        <stop offset="1" stop-color="#c0def5"/>
+      </linearGradient>
+      <linearGradient id="cloud-underside" x1="11%" y1="0%" x2="84%" y2="92%">
+        <stop stop-color="#f6fcff"/>
+        <stop offset=".58" stop-color="#c8e4fa"/>
+        <stop offset="1" stop-color="#a4c8e9"/>
+      </linearGradient>
+      <radialGradient id="sun-halo">
+        <stop stop-color="#fff7d7" stop-opacity=".9"/>
+        <stop offset=".42" stop-color="#fff9e5" stop-opacity=".53"/>
+        <stop offset="1" stop-color="#fff7d7" stop-opacity="0"/>
+      </radialGradient>
+      <linearGradient id="sun-face" x2="0" y2="1">
+        <stop stop-color="#fffdf2"/>
+        <stop offset="1" stop-color="#fff0bb"/>
+      </linearGradient>
+      <linearGradient id="moon-face" x1="10%" y1="10%" x2="89%" y2="95%">
+        <stop stop-color="#fcfeff"/>
+        <stop offset=".64" stop-color="#e1eaff"/>
+        <stop offset="1" stop-color="#a9bee8"/>
+      </linearGradient>
+      <linearGradient id="wing-blue" x1="0%" y1="0%" x2="90%" y2="100%">
+        <stop stop-color="#f8fcff"/>
+        <stop offset=".55" stop-color="#a7cffa"/>
+        <stop offset="1" stop-color="#5b8dce"/>
+      </linearGradient>
+      <linearGradient id="petal-blue" x1="30%" y1="5%" x2="85%" y2="90%">
+        <stop stop-color="#effbff"/>
+        <stop offset=".52" stop-color="#b9d7f7"/>
+        <stop offset="1" stop-color="#6e9bd8"/>
+      </linearGradient>
+      <linearGradient id="env-paper" x1="4%" y1="8%" x2="85%" y2="100%">
+        <stop stop-color="#f5fbff"/>
+        <stop offset=".44" stop-color="#dcefff"/>
+        <stop offset="1" stop-color="#94c5ed"/>
+      </linearGradient>
+      <linearGradient id="env-flap" x1="50%" y1="0%" x2="52%" y2="100%">
+        <stop stop-color="#fff"/>
+        <stop offset="1" stop-color="#c1dff6"/>
+      </linearGradient>
+      <linearGradient id="env-fold" x1="48%" y1="100%" x2="53%" y2="0%">
+        <stop stop-color="#b5d9f4"/>
+        <stop offset="1" stop-color="#eef9ff"/>
+      </linearGradient>
+      <linearGradient id="seal-blue" x1="13%" y1="3%" x2="92%" y2="100%">
+        <stop stop-color="#d6ecff"/>
+        <stop offset=".33" stop-color="#8cbff2"/>
+        <stop offset="1" stop-color="#347cb9"/>
+      </linearGradient>
+      <linearGradient id="wipe-blue" x2="0" y2="1">
+        <stop stop-color="#f9fdff"/>
+        <stop offset=".65" stop-color="#d9f0ff"/>
+        <stop offset="1" stop-color="#b6dfff"/>
+      </linearGradient>
+      <linearGradient id="meteor-trail">
+        <stop stop-color="#a3c8ff" stop-opacity="0"/>
+        <stop offset="1" stop-color="#f2f8ff" stop-opacity=".95"/>
+      </linearGradient>
+      <filter id="cloud-depth" x="-18%" y="-28%" width="136%" height="166%" color-interpolation-filters="sRGB">
+        <feDropShadow dx="0" dy="9" stdDeviation="12" flood-color="#4e87b4" flood-opacity=".19"/>
+      </filter>
+      <filter id="cloud-mist" x="-22%" y="-32%" width="144%" height="164%">
+        <feGaussianBlur stdDeviation="4"/>
+      </filter>
+      <filter id="starlight" x="-100%" y="-100%" width="300%" height="300%">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="1.9" result="light"/>
+        <feMerge><feMergeNode in="light"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+      <path id="heart-outline" d="M100 174C88 165 24 119 14 83 3 46 25 18 55 17c19-1 35 8 45 24 10-16 26-25 45-24 30 1 52 29 41 66-10 36-74 82-86 91Z"/>
+      <clipPath id="heart-clip"><use href="#heart-outline"/></clipPath>
+      <clipPath id="cloud-picture-clip" clipPathUnits="objectBoundingBox">
+        <path d="M.23 .93C.095 .93 .025 .824 .025 .693c0-.119 .048-.218 .139-.245C.15 .285 .244 .176 .364 .19 .402 .084 .49 .046 .571 .066c.096 .025 .14 .097 .164 .188 .082-.01 .158 .064 .163 .184 .053 .048 .077 .121 .077 .212 0 .176-.099 .28-.237 .28Z"/>
+      </clipPath>
+      <mask id="opening-aperture">
+        <rect width="100%" height="100%" fill="#fff"/>
+        <use class="aperture-shape" href="#heart-outline" x="-100" y="-92" fill="#000"/>
+      </mask>
+    </defs>
+
+    <symbol id="i-cloud" viewBox="0 0 24 24">
+      <path d="M7 18a4.4 4.4 0 0 1-.7-8.75 6 6 0 0 1 11.64 1.27A3.77 3.77 0 0 1 18 18Z" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round"/>
+      <path d="M12 5V2m-4 4L6 4m10 2 2-2" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24">
+      <path d="M12 20.4C10.5 19.4 3 14.5 3 8.8a4.8 4.8 0 0 1 9-2.35 4.8 4.8 0 0 1 9 2.35c0 5.7-7.5 10.6-9 11.6Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-star" viewBox="0 0 24 24">
+      <path d="M12 0c.82 8.05 3.95 11.18 12 12-8.05.82-11.18 3.95-12 12C11.18 15.95 8.05 12.82 0 12 8.05 11.18 11.18 8.05 12 0Z" fill="currentColor"/>
+    </symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24">
+      <path d="M3.5 12H20m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-down" viewBox="0 0 24 24">
+      <path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-play" viewBox="0 0 24 24">
+      <path d="M9 4.9v14.2l11-7.1L9 4.9Z" fill="currentColor" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24">
+      <path d="M8.5 5v14m7-14v14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-volume" viewBox="0 0 24 24">
+      <path d="M3.5 9v6h4l5 4V5l-5 4Zm12.5.5a4 4 0 0 1 0 5m2.7-7.5a7.8 7.8 0 0 1 0 10" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-close" viewBox="0 0 24 24">
+      <path d="m6 6 12 12M18 6 6 18" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="i-expand" viewBox="0 0 24 24">
+      <path d="M9 4H4v5m11-5h5v5m0 6v5h-5M4 15v5h5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="i-envelope" viewBox="0 0 24 24">
+      <rect x="2.5" y="5" width="19" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.3"/>
+      <path d="m3.2 6.2 7.1 6a2.6 2.6 0 0 0 3.4 0l7.1-6" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+    </symbol>
+
+    <symbol id="blue-heart" viewBox="0 0 200 190">
+      <use href="#heart-outline" fill="url(#heart-blue)" stroke="url(#heart-rim)" stroke-width="2"/>
+      <g clip-path="url(#heart-clip)">
+        <path d="M8 55c36 41 84 39 180-18l12-31H-3Z" fill="#fff" opacity=".15"/>
+        <path d="M29 53c13-24 40-25 53-8" fill="none" stroke="#fff" stroke-opacity=".72" stroke-linecap="round" stroke-width="3.3"/>
+        <path d="M34 98c16 29 47 54 66 68 30-21 65-53 77-78" fill="none" stroke="#e5f5ff" stroke-opacity=".38" stroke-width="1.5"/>
+      </g>
+      <path d="M158 34c.3 9.4 3.6 12.7 13 13-9.4.3-12.7 3.6-13 13-.3-9.4-3.6-12.7-13-13 9.4-.3 12.7-3.6 13-13Z" fill="#fff" opacity=".78"/>
+    </symbol>
+
+    <symbol id="cloud-bank" viewBox="0 0 420 188">
+      <path d="M25 164C6 156 1 137 18 123c8-7 21-10 32-8 5-22 24-40 51-34 6-29 30-54 61-53 12 0 24 3 33 9 17-24 42-33 65-24 20 8 33 23 37 42 23-8 47 6 56 29 27-5 48 11 51 32 16 7 19 24 6 37-15 17-47 22-90 25-84 6-167 8-251 2-22-2-36-7-44-16Z" fill="url(#cloud-face)"/>
+      <path d="M39 152c3-17 26-32 54-30 11-27 34-35 60-27 7-33 36-50 68-42 23 5 38 24 38 44 26-16 57-4 65 18 35-10 61 3 67 26-14 24-60 34-118 34H114c-39 0-67-5-75-23Z" fill="url(#cloud-underside)" opacity=".58" filter="url(#cloud-mist)"/>
+      <path d="M63 112c9-20 23-26 43-23 11-29 29-43 53-44 24-2 45 10 54 31 17-11 45-13 64-1 10 7 17 15 21 29 28-14 62-8 76 12-36-10-69-3-101 11-21-27-54-33-85-15-32-17-61-18-94 7-10-4-23-7-31-7Z" fill="url(#cloud-satin)" opacity=".76" filter="url(#cloud-mist)"/>
+      <path d="M30 155c34 18 85 9 113 7 50-2 77 5 116 6 56 2 108-3 145-19-18 30-103 35-183 33-73 1-153 2-191-27Z" fill="#eef8ff" opacity=".53"/>
+    </symbol>
+    <symbol id="sun" viewBox="0 0 240 240">
+      <circle cx="120" cy="120" r="119" fill="url(#sun-halo)"/>
+      <g class="sun-spokes" stroke="#fff8dc" stroke-width="1" opacity=".8">
+        <path d="M120 22v41m0 114v41M22 120h41m114 0h41M51 51l29 29m80 80 29 29M51 189l29-29m80-80 29-29M82 32l16 39m44 98 16 39M32 82l39 16m98 44 39 16M32 158l39-16m98-44 39-16M82 208l16-39m44-98 16-39"/>
+        <circle cx="120" cy="120" r="76" fill="none" stroke-dasharray="1 5" opacity=".55"/>
+      </g>
+      <circle cx="120" cy="120" r="53" fill="url(#sun-face)" stroke="#fff" stroke-opacity=".9"/>
+      <circle cx="120" cy="120" r="48" fill="none" stroke="#fff" stroke-opacity=".5"/>
+    </symbol>
+    <symbol id="moon" viewBox="0 0 180 180">
+      <circle cx="90" cy="90" r="90" fill="url(#sun-halo)" opacity=".3"/>
+      <path d="M110 33c-28 1-49 24-49 52 0 36 36 62 70 48A57 57 0 1 1 110 33Z" fill="url(#moon-face)" stroke="#f1f6ff" stroke-width=".7"/>
+      <path d="M49 73c-13 23 2 58 25 69m-22-49 5 4m9 30 4 4m-20-21 3 5" stroke="#a9bde6" fill="none" opacity=".65" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="butterfly" viewBox="0 0 80 65">
+      <g class="wing wing-left">
+        <path d="M40 37C23 7 4 5 4 18c0 12 12 22 26 23-17 0-17 15-7 16 8 1 14-9 17-20Z" fill="url(#wing-blue)" stroke="#6f9bd4" stroke-width=".75"/>
+        <path d="M10 17c8 0 17 11 27 20m-17 12c6-6 12-6 17-9M19 27l-5 2m11 5-5 4" fill="none" stroke="#fff" stroke-opacity=".82" stroke-width=".85"/>
+      </g>
+      <g class="wing wing-right">
+        <path d="M40 37C57 7 76 5 76 18c0 12-12 22-26 23 17 0 17 15 7 16-8 1-14-9-17-20Z" fill="url(#wing-blue)" stroke="#6f9bd4" stroke-width=".75"/>
+        <path d="M70 17c-8 0-17 11-27 20m17 12c-6-6-12-6-17-9m18-13 5 2m-11 5 5 4" fill="none" stroke="#fff" stroke-opacity=".82" stroke-width=".85"/>
+      </g>
+      <path d="M40 48V32m0 1c-2-7-5-8-8-8m8 8c2-7 5-8 8-8" stroke="#537bab" stroke-width="1.4" stroke-linecap="round" fill="none"/>
+    </symbol>
+    <path id="petal" d="M0 0C-13-6-18-19-11-28c7-9 16-8 22 0C18-19 13-6 0 0Z" fill="url(#petal-blue)" stroke="#87acda" stroke-width=".55"/>
+    <symbol id="flower-stems" viewBox="0 0 130 180">
+      <path d="M79 171C64 137 68 94 65 58m13 113c2-36 11-70 32-100m-33 95c-9-39-33-57-50-63" fill="none" stroke="#648eaa" stroke-width="1.3" stroke-linecap="round"/>
+      <path d="M70 125C56 121 52 110 51 101c12 3 18 11 19 24Zm8 25c12-16 22-22 32-21-6 14-16 19-32 21Zm7-36c1-16 7-25 16-28 1 13-5 22-16 28ZM60 137c-17 1-27-7-31-16 13-2 22 4 31 16Z" fill="#9ec5d7" fill-opacity=".67" stroke="#82abc2" stroke-width=".7"/>
+      <g transform="translate(29 102) scale(.38)"><use href="#petal"/><use href="#petal" transform="rotate(90)"/><use href="#petal" transform="rotate(180)"/><use href="#petal" transform="rotate(270)"/><circle r="5" fill="#f7f3db"/></g>
+      <g transform="translate(110 70) scale(.42)"><use href="#petal"/><use href="#petal" transform="rotate(90)"/><use href="#petal" transform="rotate(180)"/><use href="#petal" transform="rotate(270)"/><circle r="5" fill="#f7f3db"/></g>
+    </symbol>
+  </svg>
+
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="wordmark" href="#welcome" data-goto="welcome" aria-label="A Sky That Learned to Love, back to the beginning">
+        <span class="wordmark-mark"><svg aria-hidden="true"><use href="#i-cloud"/></svg></span>
+        <span class="wordmark-text">A Sky That <span>Learned to Love</span></span>
+      </a>
+
+      <nav class="chapter-nav" id="chapter-nav" aria-label="Chapters" hidden>
+        <a href="#view" data-goto="view"><span>01</span> The view</a>
+        <a href="#letters" data-goto="letters"><span>02</span> Letters</a>
+        <a href="#memories" data-goto="memories"><span>03</span> Memories</a>
+        <a href="#moment" data-goto="moment"><span>04</span> The film</a>
+        <a href="#promises" data-goto="promises"><span>05</span> Promises</a>
+        <a href="#sunrise" data-goto="sunrise"><span>06</span> Sunrise</a>
+      </nav>
+
+      <span class="topbar-dedication"><span>James</span><svg aria-hidden="true"><use href="#i-heart"/></svg><span>Julie</span></span>
+      <button class="chapter-toggle" type="button" aria-expanded="false" aria-controls="chapter-nav" hidden>
+        <span id="chapter-position">01 / 06</span><svg aria-hidden="true"><use href="#i-down"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="scene welcome-scene" id="welcome" aria-labelledby="welcome-title">
+      <div class="sky-atmosphere" aria-hidden="true">
+        <div class="grain"></div>
+        <svg class="weather-sun" viewBox="0 0 240 240"><use href="#sun"/></svg>
+        <svg class="weather-cloud sun-wisp" viewBox="0 0 420 188"><use href="#cloud-bank"/></svg>
+        <svg class="weather-cloud bank-left" viewBox="0 0 420 188"><use href="#cloud-bank"/></svg>
+        <svg class="weather-cloud bank-right" viewBox="0 0 420 188"><use href="#cloud-bank"/></svg>
+        <svg class="weather-cloud bank-front" viewBox="0 0 420 188"><use href="#cloud-bank"/></svg>
+        <svg class="sky-sparkles" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMid slice">
+          <use href="#i-star" x="124" y="121" width="13" height="13"/>
+          <use href="#i-star" x="533" y="98" width="8" height="8"/>
+          <use href="#i-star" x="654" y="558" width="15" height="15"/>
+          <use href="#i-star" x="1132" y="110" width="14" height="14"/>
+          <use href="#i-star" x="1188" y="380" width="10" height="10"/>
+          <path d="M266 76h.1m159 95h.1m135 330h.1m104-285h.1m410 200h.1m-209 175h.1m283-438h.1m-62 144h.1" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+        </svg>
+      </div>
+
+      <div class="intro-layout wrap">
+        <div class="intro-copy">
+          <p class="eyebrow"><span class="index-dot"></span> A little world by James</p>
+          <h1 id="welcome-title" tabindex="-1">A little sky<br> <em>just for you.</em></h1>
+          <p class="intro-lead">Somewhere between the clouds and the stars, there is a little place I made just for you.</p>
+          <p class="intro-subtitle">Welcome to your own little piece of my universe, <strong>Baby Julie.</strong></p>
+        </div>
+
+        <div class="intro-art parallax" id="intro-art" aria-hidden="true">
+          <svg class="envelope-art" viewBox="0 0 620 515">
+            <defs>
+              <radialGradient id="envelope-light">
+                <stop stop-color="#fff" stop-opacity=".7"/><stop offset=".65" stop-color="#e6f4ff" stop-opacity=".28"/><stop offset="1" stop-color="#e6f4ff" stop-opacity="0"/>
+              </radialGradient>
+              <filter id="envelope-depth" x="-40%" y="-65%" width="180%" height="235%">
+                <feDropShadow dx="0" dy="18" stdDeviation="19" flood-color="#32699d" flood-opacity=".3"/>
+              </filter>
+            </defs>
+            <ellipse cx="314" cy="259" rx="262" ry="223" fill="url(#envelope-light)"/>
+            <g class="atlas-rings" fill="none" stroke="#f8fdff">
+              <circle cx="310" cy="256" r="199" stroke-opacity=".84"/>
+              <circle cx="310" cy="256" r="184" stroke-opacity=".71" stroke-dasharray="1 5"/>
+              <circle cx="310" cy="256" r="155" stroke-opacity=".44"/>
+              <ellipse cx="310" cy="256" rx="263" ry="105" transform="rotate(-22 310 256)" stroke-opacity=".73"/>
+              <ellipse cx="310" cy="256" rx="239" ry="107" transform="rotate(28 310 256)" stroke-opacity=".37"/>
+              <path d="M310 44v29m0 367v29M98 256h29m367 0h29" stroke-opacity=".9"/>
+            </g>
+            <g fill="#f9fdff" class="atlas-stars">
+              <use href="#i-star" x="299" y="45" width="22" height="22"/>
+              <use href="#i-star" x="503" y="246" width="19" height="19"/>
+              <use href="#i-star" x="108" y="246" width="19" height="19"/>
+              <use href="#i-star" x="464" y="108" width="14" height="14"/>
+              <use href="#i-star" x="139" y="381" width="16" height="16"/>
+              <use href="#i-star" x="407" y="403" width="11" height="11"/>
+            </g>
+            <use class="letter-wisp letter-wisp-back" href="#cloud-bank" x="350" y="142" width="235" height="105" opacity=".74"/>
+            <use class="art-float-heart float-a" href="#blue-heart" x="113" y="128" width="30" height="29"/>
+            <use class="art-float-heart float-b" href="#blue-heart" x="479" y="325" width="34" height="32"/>
+            <use class="art-float-heart float-c" href="#blue-heart" x="398" y="74" width="18" height="17"/>
+            <g transform="translate(126 146) rotate(-8 184 110)">
+              <g class="envelope-object" filter="url(#envelope-depth)">
+                <rect x="1" y="1" width="366" height="220" rx="19" fill="#88b9e0" stroke="#f8fdff" stroke-width="1.7"/>
+                <g class="envelope-letter">
+                  <rect x="26" y="15" width="316" height="184" rx="9" fill="#fbfdff" stroke="#c6dff4"/>
+                  <path d="M38 31h292v150H38Z" stroke="#c6dff4" fill="none" stroke-dasharray="2 4"/>
+                  <text x="184" y="84" text-anchor="middle" class="envelope-hand">For my Julie</text>
+                  <use href="#blue-heart" x="169" y="100" width="30" height="29"/>
+                </g>
+                <path d="M1 23a22 22 0 0 1 22-22l161 119L345 1a22 22 0 0 1 22 22v177a21 21 0 0 1-21 21H22a21 21 0 0 1-21-21Z" fill="url(#env-paper)" stroke="#f8fdff" stroke-width="1.25"/>
+                <path d="M2 203 165 92q19-13 38 0l163 111a19 19 0 0 1-19 18H21A19 19 0 0 1 2 203Z" fill="url(#env-fold)" stroke="#f6fbff" stroke-opacity=".85"/>
+                <path class="envelope-flap" d="M2 18A19 19 0 0 1 21 1h326a19 19 0 0 1 19 17L202 137a30 30 0 0 1-36 0Z" fill="url(#env-flap)" stroke="#f8fdff" stroke-width="1.35"/>
+                <g class="envelope-seal">
+                  <path d="M185 106c11-4 26 7 27 17 5 10-1 23-11 27-9 7-26 5-33-3-11-6-14-20-7-29 5-8 15-10 24-12Z" fill="url(#seal-blue)" stroke="#f2f9ff" stroke-width="1.25"/>
+                  <circle cx="184" cy="131" r="17" fill="none" stroke="#e5f1ff" stroke-opacity=".8" stroke-width=".8"/>
+                  <use href="#i-heart" x="172" y="120" width="24" height="24" color="#f4fbff"/>
+                </g>
+                <path d="M19 195v8h8m313-8v8h8" stroke="#f7fbff" fill="none" stroke-width="1.2"/>
+              </g>
+            </g>
+            <use class="letter-wisp letter-wisp-front" href="#cloud-bank" x="36" y="334" width="244" height="109" opacity=".93"/>
+            <text x="310" y="479" text-anchor="middle" class="atlas-caption">SPECIAL DELIVERY · FOR JULIE ONLY</text>
+          </svg>
+        </div>
+
+        <div class="intro-actions">
+          <a class="action action-primary" id="open-sky" href="#view" data-goto="view">Open Your Sky <svg aria-hidden="true"><use href="#i-heart"/></svg></a>
+          <p class="fine-print">Six chapters, and a few little secrets.</p>
+        </div>
+      </div>
+      <p class="edge-mark wrap" aria-hidden="true"><span>001</span><span>THE SKY IS YOURS TO EXPLORE</span></p>
+    </section>
+
+    <section class="scene view-scene" id="view" aria-labelledby="view-title">
+      <div class="sky-atmosphere" aria-hidden="true">
+        <div class="grain"></div>
+        <svg class="weather-cloud view-bank-back" viewBox="0 0 420 188"><use href="#cloud-bank"/></svg>
+        <svg class="weather-cloud view-bank-front" viewBox="0 0 420 188"><use href="#cloud-bank"/></svg>
+        <svg class="weather-cloud view-bank-side" viewBox="0 0 420 188"><use href="#cloud-bank"/></svg>
+        <div class="ambient-hearts" data-ambient="day"></div>
+      </div>
+      <div class="view-layout wrap">
+        <header class="view-heading scene-reveal">
+          <p class="eyebrow"><span class="index-dot"></span> 01 / A sky for two</p>
+          <h1 id="view-title" tabindex="-1">You are my<br> <em>favorite view.</em></h1>
+        </header>
+        <div class="view-interact parallax scene-reveal">
+          <svg class="view-orbit" viewBox="0 0 500 500" aria-hidden="true">
+            <circle cx="250" cy="250" r="190" stroke-opacity=".77"/>
+            <circle cx="250" cy="250" r="177" stroke-opacity=".67" stroke-dasharray="1 4"/>
+            <circle cx="250" cy="250" r="132" stroke-opacity=".41"/>
+            <ellipse cx="250" cy="250" rx="238" ry="91" transform="rotate(-31 250 250)" stroke-opacity=".64"/>
+            <path d="M250 45v26m0 358v26M45 250h26m358 0h26" stroke-opacity=".94"/>
+            <use href="#i-star" x="238" y="45" width="24" height="24" fill="#fff" stroke="none"/>
+            <use href="#i-star" x="155" y="351" width="16" height="16" fill="#fff" stroke="none"/>
+          </svg>
+          <button class="sky-target sky-heart" type="button" id="view-heart" aria-label="Send a burst of blue hearts">
+            <svg viewBox="0 0 200 190" aria-hidden="true"><use href="#blue-heart"/></svg>
+          </button>
+          <button class="sky-target sky-cloud" type="button" data-note="cloud" aria-label="Read the cloud's secret love note">
+            <svg viewBox="0 0 420 188" aria-hidden="true"><use href="#cloud-bank" filter="url(#cloud-depth)"/></svg>
+            <span>Love note</span>
+          </button>
+          <button class="sky-target sky-star" type="button" data-note="star" aria-label="Read a star's secret, just for Julie">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-star"/></svg>
+            <span>For Julie</span>
+          </button>
+          <button class="sky-target tiny-heart" type="button" data-note="heart" aria-label="Discover the little hidden heart">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#i-heart"/></svg>
+          </button>
+          <p class="orbit-caption">Little things hide in this sky. <span>Try touching one.</span></p>
+        </div>
+        <div class="view-copy scene-reveal">
+          <blockquote>Of all the beautiful things this world has allowed me to witness, you remain the view I never want to look away from. If heaven had a color, perhaps it would resemble the peace I find whenever I think of you.</blockquote>
+          <p class="view-intro">Baby Julie, I made this sky to hold a few of the things I wish I could tell you every day. Take your time. Every little thing here is yours.</p>
+          <p class="view-signature">With love, <em>James</em></p>
+          <a class="action action-primary" href="#letters" data-goto="letters">Discover What the Sky Is Hiding <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="scene letters-scene" id="letters" aria-labelledby="letters-title">
+      <div class="letter-illumination" aria-hidden="true"></div>
+      <div class="letters-layout wrap">
+        <div class="letter-aside scene-reveal">
+          <p class="eyebrow"><span class="index-dot"></span> 02 / A note in the clouds</p>
+          <h1 id="letters-title" tabindex="-1">Letters written <em>above the clouds.</em></h1>
+          <p class="letter-deck">For the things I sometimes forget to say, and the things I hope you always know.</p>
+          <button class="text-action" id="typing-toggle" type="button" hidden>Read the whole letter</button>
+
+          <div class="flower-area">
+            <button id="letter-flower" class="letter-flower" type="button" aria-label="Bloom the blue flower" aria-pressed="false">
+              <svg viewBox="0 0 130 180" aria-hidden="true">
+                <use href="#flower-stems"/>
+                <g transform="translate(65 58)">
+                  <g class="petal" style="--turn:0deg;--wait:0ms"><use href="#petal"/></g>
+                  <g class="petal" style="--turn:72deg;--wait:45ms"><use href="#petal"/></g>
+                  <g class="petal" style="--turn:144deg;--wait:90ms"><use href="#petal"/></g>
+                  <g class="petal" style="--turn:216deg;--wait:135ms"><use href="#petal"/></g>
+                  <g class="petal" style="--turn:288deg;--wait:180ms"><use href="#petal"/></g>
+                  <circle r="5.5" fill="#fff8da" stroke="#9aacbf" stroke-width=".7"/>
+                </g>
+              </svg>
+            </button>
+            <p id="flower-note" class="flower-note" aria-live="polite">Touch the blue flower.</p>
+          </div>
+        </div>
+        <article class="letter-paper" aria-label="Love letter from James to Julie">
+          <div class="paper-head">
+            <p class="eyebrow">Personal correspondence</p>
+            <svg aria-hidden="true"><use href="#i-envelope"/></svg>
+          </div>
+          <div class="letter-body" id="letter-body">
+            <p class="salutation" data-type>My dearest Baby Julie,</p>
+            <p data-type>I’m grateful that you came into my life. I find myself carrying small pieces of our time together into the rest of my day. A message from you can make me smile long after I’ve put my phone down. Sometimes I remember the way you said something ordinary and wish I could hear you say it again. Those are the moments I’m glad I paid attention to.</p>
+            <p data-type>Gratias tibi ago. Thank you for letting me get to know you at your own pace. I want you to feel appreciated in the everyday ways that matter. I want to remember what you tell me, ask how the things you care about are going, and make room for you to feel exactly how you feel. You can come to me on the quiet and difficult days, too.</p>
+            <p data-type>I hope we keep learning how to understand each other. When I miss what you’re trying to say, I want to slow down and ask. When I get something wrong, I want to own it and do better. I want to support your dreams in the ways you actually need, even on days when the kindest thing I can offer is patience and a listening ear.</p>
+            <p data-type>I love writing beautiful words for you. I also want you to recognize my love when there’s no letter to open. I hope you’ll feel it when I keep a promise, when I follow up on something you told me, and when I make the time to be there. I want to keep choosing you in those small ways, day after day.</p>
+            <p data-type>Ad astra per aspera, through hardships to the stars. If life takes us through a difficult season, I pray God gives us the wisdom to speak gently and the courage to grow. I trust Him with the timing of our story. What I ask for is a heart that can love you well in the chapter we’re living now.</p>
+            <p data-type>I’m so glad I get to know you, Julie. I hope you open this letter again on an ordinary afternoon and feel, even for a moment, how happy I am that you’re here.</p>
+            <p class="letter-signoff" data-type>With all my love, James</p>
+          </div>
+          <svg class="paper-butterflies" viewBox="0 0 290 205" aria-hidden="true">
+            <path d="M35 144C93 190 217 135 205 79c-13-51-78 2-62 26 14 23 73-20 104-48" fill="none" stroke="#8eafd3" stroke-opacity=".55" stroke-dasharray="1 5" stroke-linecap="round"/>
+            <g>
+              <use href="#butterfly" x="-24" y="-24" width="48" height="39"/>
+              <animateMotion data-flight begin="indefinite" dur="22s" repeatCount="indefinite" rotate="auto"
+                path="M35 144C93 190 217 135 205 79c-13-51-78 2-62 26 14 23 73-20 104-48C266 23 98 38 35 144"/>
+            </g>
+            <use href="#butterfly" x="228" y="28" width="31" height="25" opacity=".74"/>
+          </svg>
+        </article>
+      </div>
+      <div class="chapter-footer wrap">
+        <a href="#view" data-goto="view"><svg class="arrow-back" aria-hidden="true"><use href="#i-arrow"/></svg> The view</a>
+        <a href="#memories" data-goto="memories">Our memories <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </section>
+
+    <section class="scene memories-scene" id="memories" aria-labelledby="memories-title">
+      <div class="scrapbook-dust" aria-hidden="true"></div>
+      <div class="ambient-hearts scrapbook-hearts" data-ambient="day" aria-hidden="true"></div>
+      <div class="wrap gallery-wrap">
+        <header class="gallery-header scene-reveal">
+          <p class="eyebrow"><span class="index-dot"></span> 03 / The sky’s keepsakes</p>
+          <h1 id="memories-title" tabindex="-1">Two memories,<br> <em>infinite meaning.</em></h1>
+          <p>Two little pieces of time I wish I could hold in my hands.</p>
+        </header>
+        <div class="gallery-spread">
+          <figure class="memory memory-cloud">
+            <button class="memory-button" type="button" data-photo="0" aria-label="Open our first photograph and its hidden caption">
+              <span class="memory-mount cloud-mount">
+                <svg class="cloud-frame" viewBox="0 0 420 350" preserveAspectRatio="none" aria-hidden="true">
+                  <path d="M97 333C37 333 5 295 5 247c0-45 23-85 58-96-7-57 37-102 87-92 17-36 55-48 91-38 44 11 65 34 72 66 41-3 75 29 76 69 19 13 25 38 25 72 0 63-44 105-100 105Z" fill="url(#cloud-face)" stroke="#fff" stroke-width="4"/>
+                  <path d="M93 316C39 309 20 278 20 241m325 57c33-15 52-47 51-78" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <span class="memory-window cloud-window">
+                  <svg class="memory-art" viewBox="0 0 230 155" aria-hidden="true">
+                    <circle cx="115" cy="75" r="53" fill="none" stroke="currentColor" stroke-dasharray="1 4"/>
+                    <use href="#cloud-bank" x="38" y="65" width="154" height="69"/>
+                    <use href="#i-star" x="105" y="36" width="20" height="20"/>
+                    <use href="#i-star" x="164" y="60" width="10" height="10"/>
+                  </svg>
+                  <img alt="James and Julie’s first photograph in the sky scrapbook" decoding="async" hidden>
+                  <span class="memory-empty">The first photograph goes here</span>
+                </span>
+                <svg class="memory-expand" aria-hidden="true"><use href="#i-expand"/></svg>
+              </span>
+            </button>
+            <figcaption><span>FIG. 01</span><em>A piece of time</em></figcaption>
+          </figure>
+          <figure class="memory memory-print">
+            <button class="memory-button print-button" type="button" data-photo="1" aria-label="Open our second photograph and its hidden caption">
+              <span class="print-tape" aria-hidden="true"></span>
+              <span class="memory-window print-window">
+                <svg class="memory-art" viewBox="0 0 230 155" aria-hidden="true">
+                  <path d="M15 100c59-54 116-52 200 0M20 113c81-35 139-35 191 1m-171 10c53-14 111-14 157 0" fill="none" stroke="currentColor" stroke-opacity=".56" stroke-width=".85"/>
+                  <use href="#i-star" x="102" y="37" width="26" height="26"/>
+                  <use href="#i-star" x="148" y="52" width="10" height="10"/>
+                  <use href="#i-heart" x="73" y="49" width="16" height="16"/>
+                </svg>
+                <img alt="James and Julie’s second photograph in the sky scrapbook" decoding="async" hidden>
+                <span class="memory-empty">The second photograph goes here</span>
+              </span>
+              <span class="print-label"><span>FIG. 02</span><em>Close to my heart</em><svg aria-hidden="true"><use href="#i-expand"/></svg></span>
+            </button>
+          </figure>
+        </div>
+        <p class="gallery-hint"><svg aria-hidden="true"><use href="#i-star"/></svg> Tap either memory to find the words I tucked behind it.</p>
+      </div>
+      <div class="chapter-footer wrap">
+        <a href="#letters" data-goto="letters"><svg class="arrow-back" aria-hidden="true"><use href="#i-arrow"/></svg> The letter</a>
+        <a href="#moment" data-goto="moment">Our little film <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </section>
+
+    <section class="scene moment-scene dark-scene" id="moment" aria-labelledby="moment-title">
+      <div class="film-haze" aria-hidden="true">
+        <svg viewBox="0 0 420 188"><use href="#cloud-bank"/></svg>
+        <svg viewBox="0 0 420 188"><use href="#cloud-bank"/></svg>
+      </div>
+      <div class="film-wrap wrap">
+        <div class="film-heading scene-reveal">
+          <p class="eyebrow"><span class="index-dot"></span> 04 / A little film</p>
+          <h1 id="moment-title" tabindex="-1">A moment I wish<br> <em>could last forever.</em></h1>
+          <span class="film-roll" aria-hidden="true">J & J<br>REEL 01</span>
+        </div>
+        <figure class="film-figure scene-reveal">
+          <div class="film-frame" id="film-frame">
+            <video id="our-film" controls playsinline preload="metadata" aria-label="Our Moment, a personal video from James to Julie" hidden></video>
+            <div id="film-cover" class="film-cover">
+              <svg class="film-art" viewBox="0 0 800 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                <circle cx="400" cy="190" r="139" fill="none" stroke="#edf6ff" stroke-opacity=".34"/>
+                <circle cx="400" cy="190" r="168" fill="none" stroke="#edf6ff" stroke-opacity=".42" stroke-dasharray="1 6"/>
+                <use href="#moon" x="293" y="78" width="214" height="214" opacity=".62"/>
+                <use href="#cloud-bank" x="-124" y="266" width="594" height="265" opacity=".44"/>
+                <use href="#cloud-bank" x="437" y="284" width="520" height="233" opacity=".42"/>
+                <use href="#i-star" x="143" y="118" width="16" height="16" color="#ddedff"/>
+                <use href="#i-star" x="610" y="85" width="12" height="12" color="#ddedff"/>
+                <path d="M24 56V24h32m688 0h32v32m0 308v32h-32m-688 0H24v-32" fill="none" stroke="#eef5ff" stroke-opacity=".62"/>
+              </svg>
+              <button class="film-play" id="film-play" type="button" aria-label="Play Our Moment">
+                <svg aria-hidden="true"><use href="#i-play"/></svg>
+              </button>
+              <span class="film-cover-label">Our moment</span>
+            </div>
+          </div>
+          <p class="media-status film-status" id="film-status" role="status"></p>
+          <figcaption>
+            <span class="film-caption-index">J & J <span> / </span> A MOMENT TO KEEP</span>
+            <p>Some moments feel ordinary while they’re happening. Then I remember you were there, and I catch myself wishing I could be back in that room for a few more minutes. That’s what being with you does to time.</p>
+          </figcaption>
+        </figure>
+      </div>
+      <div class="chapter-footer wrap">
+        <a href="#memories" data-goto="memories"><svg class="arrow-back" aria-hidden="true"><use href="#i-arrow"/></svg> The photos</a>
+        <a href="#promises" data-goto="promises">Under the stars <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </section>
+
+    <section class="scene promises-scene dark-scene" id="promises" aria-labelledby="promises-title">
+      <div class="night-atmosphere" aria-hidden="true">
+        <div class="star-field" id="star-field"></div>
+        <svg class="night-moon" viewBox="0 0 180 180"><use href="#moon"/></svg>
+        <svg class="meteors" viewBox="0 0 1000 530" preserveAspectRatio="xMidYMid slice">
+          <g class="meteor">
+            <path d="M-109-38 0 0" stroke="url(#meteor-trail)" stroke-width="1.25"/>
+            <use href="#i-star" x="-5" y="-5" width="10" height="10" color="#f8fbff" filter="url(#starlight)"/>
+            <animateMotion data-flight begin="indefinite" dur="10s" repeatCount="indefinite" path="M125 12C332 36 686 122 905 249"/>
+          </g>
+          <g class="meteor meteor-delayed">
+            <path d="M-77-27 0 0" stroke="url(#meteor-trail)" stroke-width="1"/>
+            <use href="#i-star" x="-4" y="-4" width="8" height="8" color="#e1f0ff"/>
+            <animateMotion data-flight begin="indefinite" dur="14s" repeatCount="indefinite" path="M358-34C469 42 719 107 995 211"/>
+          </g>
+        </svg>
+        <div class="ambient-hearts" data-ambient="night"></div>
+      </div>
+      <div class="promises-wrap wrap">
+        <header class="promises-heading scene-reveal">
+          <p class="eyebrow"><span class="index-dot"></span> 05 / A map after dark</p>
+          <h1 id="promises-title" tabindex="-1">The constellation <em>of my promises.</em></h1>
+          <p>Touch a star to find a promise I want to keep.</p>
+        </header>
+        <div class="constellation-layout">
+          <div class="constellation scene-reveal" aria-label="Five stars with a promise on each">
+            <svg viewBox="0 0 660 408" class="constellation-chart" aria-hidden="true">
+              <defs>
+                <radialGradient id="constellation-haze"><stop stop-color="#6da7ef" stop-opacity=".27"/><stop offset="1" stop-color="#6da7ef" stop-opacity="0"/></radialGradient>
+              </defs>
+              <ellipse cx="328" cy="203" rx="290" ry="198" fill="url(#constellation-haze)"/>
+              <g fill="none" stroke="#bdd7fb" stroke-opacity=".32">
+                <ellipse cx="330" cy="205" rx="275" ry="176"/>
+                <ellipse cx="330" cy="205" rx="259" ry="161" stroke-dasharray="1 5"/>
+                <path d="M330 15v30m0 321v29M42 205h30m516 0h30m-488-91 8 8m388 157 8 8m-4-180-8 8m-388 171-8 8"/>
+              </g>
+              <path class="constellation-line" d="M148 162 251 92 367 153 516 113 441 284 308 330Z" pathLength="1" fill="none" stroke="#b8d7ff" stroke-width="1.2"/>
+              <path d="M113 274h.1m69-69h.1m45 97h.1m74-161h.1m124 65h.1m67 60h.1m64-81h.1m-333-57h.1m166-66h.1m19 279h.1" stroke="#def1ff" stroke-width="2" stroke-linecap="round" opacity=".67"/>
+              <use href="#i-star" x="361" y="147" width="12" height="12" color="#d3e7ff" opacity=".77"/>
+            </svg>
+            <button class="promise-star" type="button" data-promise="0" style="--x:22.42%;--y:39.71%" aria-label="Reveal promise one" aria-pressed="false"><svg aria-hidden="true"><use href="#i-star"/></svg><span>01</span></button>
+            <button class="promise-star" type="button" data-promise="1" style="--x:38.03%;--y:22.55%" aria-label="Reveal promise two" aria-pressed="false"><svg aria-hidden="true"><use href="#i-star"/></svg><span>02</span></button>
+            <button class="promise-star" type="button" data-promise="2" style="--x:78.18%;--y:27.70%" aria-label="Reveal promise three" aria-pressed="false"><svg aria-hidden="true"><use href="#i-star"/></svg><span>03</span></button>
+            <button class="promise-star" type="button" data-promise="3" style="--x:66.82%;--y:69.61%" aria-label="Reveal promise four" aria-pressed="false"><svg aria-hidden="true"><use href="#i-star"/></svg><span>04</span></button>
+            <button class="promise-star" type="button" data-promise="4" style="--x:46.67%;--y:80.88%" aria-label="Reveal promise five" aria-pressed="false"><svg aria-hidden="true"><use href="#i-star"/></svg><span>05</span></button>
+          </div>
+          <div class="promise-copy scene-reveal">
+            <div id="promise-reading" class="promise-reading" aria-live="polite" aria-atomic="true">
+              <p class="eyebrow" id="promise-index">Written in the stars</p>
+              <p id="promise-text">There are five promises in this little sky, Julie. You can start with whichever star catches your eye.</p>
+            </div>
+            <p id="promise-count" class="promise-count">00 / 05 discovered</p>
+            <blockquote class="bible-verse">
+              <p>“Love is patient, love is kind.”</p>
+              <cite>1 Corinthians 13:4 (NIV)</cite>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+      <div class="chapter-footer wrap">
+        <a href="#moment" data-goto="moment"><svg class="arrow-back" aria-hidden="true"><use href="#i-arrow"/></svg> Our little film</a>
+        <a href="#sunrise" data-goto="sunrise">Meet me at sunrise <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </section>
+
+    <section class="scene sunrise-scene" id="sunrise" aria-labelledby="sunrise-title">
+      <div class="dawn-atmosphere" aria-hidden="true">
+        <svg class="dawn-beams" viewBox="0 0 1000 610" preserveAspectRatio="xMidYMid slice">
+          <path d="M680 285 424 0h64Zm0 0L660 0h50Zm0 0L849 0h73Zm0 0 320-105v70Zm0 0L237 0h103Zm0 0L1000 17v45Z" fill="#fff8e6" opacity=".33"/>
+        </svg>
+        <svg class="dawn-sun" viewBox="0 0 240 240"><use href="#sun"/></svg>
+        <svg class="weather-cloud dawn-cloud-left" viewBox="0 0 420 188"><use href="#cloud-bank"/></svg>
+        <svg class="weather-cloud dawn-cloud-right" viewBox="0 0 420 188"><use href="#cloud-bank"/></svg>
+        <svg class="weather-cloud dawn-cloud-front" viewBox="0 0 420 188"><use href="#cloud-bank"/></svg>
+        <div class="ambient-hearts" data-ambient="dawn"></div>
+      </div>
+
+      <div class="sunrise-layout wrap">
+        <div class="sunrise-heading scene-reveal">
+          <p class="eyebrow"><span class="index-dot"></span> 06 / First light</p>
+          <h1 id="sunrise-title" tabindex="-1">Until the sky<br> <em>runs out of blue.</em></h1>
+          <div class="sunrise-illustration">
+            <svg viewBox="0 0 340 195" aria-hidden="true">
+              <circle cx="176" cy="95" r="71" fill="none" stroke="#fff" stroke-opacity=".95"/>
+              <circle cx="176" cy="95" r="60" fill="none" stroke="#fff" stroke-opacity=".85" stroke-dasharray="1 5"/>
+              <path d="M30 140h278m-242 7h221m-197 8h157" stroke="#fff" stroke-opacity=".76" fill="none"/>
+              <use href="#cloud-bank" x="21" y="93" width="193" height="86" opacity=".72"/>
+              <use href="#cloud-bank" x="166" y="97" width="157" height="70" opacity=".82"/>
+              <g transform="translate(173 90)">
+                <use href="#butterfly" x="-19" y="-14" width="38" height="31"/>
+                <animateMotion data-flight begin="indefinite" dur="20s" repeatCount="indefinite" rotate="auto"
+                  path="M0 0C-25-55-99 31-72 44c47 22 131-6 133-45S-7-37 0 0"/>
+              </g>
+              <use href="#i-star" x="252" y="47" width="14" height="14" color="#fff"/>
+            </svg>
+            <button class="sunrise-secret" type="button" data-note="sunrise" aria-label="Find the secret tucked into the sunrise">
+              <svg aria-hidden="true"><use href="#i-star"/></svg>
+            </button>
+          </div>
+          <p class="dawn-hint">I tucked one last secret into the first light.</p>
+        </div>
+        <article class="final-letter" aria-label="James’s final letter to Baby Julie">
+          <p class="salutation">Baby Julie,</p>
+          <p>If I could leave one thing written across the sky, it would be the simple truth that I am grateful for you.</p>
+          <p>I do not know every chapter that awaits us, nor can I promise that every day will be effortless. But I hope to meet each tomorrow with a heart willing to understand you, a spirit willing to grow, and a love that never forgets to appreciate you.</p>
+          <p>You are not merely a beautiful part of my days. You have become one of the reasons those days feel beautiful.</p>
+          <p>And if I were given countless skies to explore, I would still find myself searching for the one where I get to see you.</p>
+          <p><em>In perpetuum, Baby Julie.</em></p>
+          <p class="letter-signoff">With all my love,<br>James Navares Traigo.</p>
+          <p class="farewell-line">Until the next sunrise, my favorite person. ♡</p>
+          <button class="action action-primary" id="keep-sky" type="button">Keep This Little Sky Forever <svg aria-hidden="true"><use href="#i-heart"/></svg></button>
+        </article>
+      </div>
+      <div class="chapter-footer wrap">
+        <a href="#promises" data-goto="promises"><svg class="arrow-back" aria-hidden="true"><use href="#i-arrow"/></svg> Our promises</a>
+        <a href="#welcome" data-goto="welcome">Back to the beginning <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </section>
+  </main>
+
+  <aside class="soundtrack" id="soundtrack" aria-label="Soundtrack" hidden>
+    <audio id="our-song" preload="none" loop></audio>
+    <div class="sound-panel" id="sound-panel" hidden>
+      <p class="eyebrow">The soundtrack</p>
+      <p class="sound-title">A song that reminds me of you.</p>
+      <div class="waveform" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <label class="sr-only" for="song-position">Song position</label>
+      <input id="song-position" class="range" type="range" min="0" max="1" step=".01" value="0" disabled>
+      <div class="sound-time"><span id="song-elapsed">0:00</span><span id="song-duration">0:00</span></div>
+      <label class="sound-volume" for="song-volume">
+        <svg aria-hidden="true"><use href="#i-volume"/></svg><span class="sr-only">Music volume</span>
+        <input id="song-volume" class="range" type="range" min="0" max="1" step=".01" value=".65">
+      </label>
+      <p class="media-status" id="song-status" role="status"></p>
+    </div>
+    <div class="sound-dock">
+      <button id="song-play" class="sound-play" type="button" aria-label="Play our song"><svg aria-hidden="true"><use href="#i-play"/></svg></button>
+      <button id="sound-toggle" class="sound-toggle" type="button" aria-expanded="false" aria-controls="sound-panel">
+        <span class="vinyl" aria-hidden="true"></span><span>Our song</span><svg aria-hidden="true"><use href="#i-down"/></svg>
+      </button>
+    </div>
+  </aside>
+
+  <div id="scene-wipe" class="scene-wipe" aria-hidden="true">
+    <svg class="cloud-wipe" viewBox="0 0 100 130" preserveAspectRatio="none">
+      <path d="M0 19C5 10 13 8 19 14 24 4 36 1 43 11 48-1 60-2 68 9 79 4 87 8 91 15 94 12 97 13 100 16V130H0Z" fill="url(#wipe-blue)"/>
+      <path d="M0 36c10-10 19-2 26-9 9-10 20-7 27 1 10-10 18-9 26-1 9-5 16-3 21 1" fill="none" stroke="#fff" stroke-width=".35" opacity=".87"/>
+    </svg>
+    <svg class="wave-wipe" viewBox="0 0 150 100" preserveAspectRatio="none">
+      <path d="M0 0H126C146 14 148 31 135 47 122 64 124 80 145 100H0Z" fill="url(#wipe-blue)"/>
+      <path d="M122 0c18 15 20 30 8 47-13 17-11 36 10 53" fill="none" stroke="#f6fbff" stroke-width=".5"/>
+    </svg>
+    <svg class="light-wipe" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid slice">
+      <rect class="light-screen" width="100" height="100"/>
+      <circle class="light-halo" cx="50" cy="50" r="49" fill="url(#sun-halo)" opacity=".35"/>
+      <path class="light-trace" pathLength="1" d="m32 60 10-16 11 7 11-12 9 13" fill="none" stroke="#e9f6ff" stroke-width=".22" stroke-linecap="round"/>
+      <use href="#i-star" x="48.5" y="48.5" width="3" height="3" color="#fff"/>
+    </svg>
+    <svg class="heart-wipe" width="100%" height="100%" preserveAspectRatio="none">
+      <rect width="100%" height="100%" fill="url(#wipe-blue)" mask="url(#opening-aperture)"/>
+    </svg>
+    <p>Every sky looks a little softer with you in it, Julie.</p>
+  </div>
+  <div class="particle-layer" id="particles" aria-hidden="true"></div>
+
+  <dialog id="note-dialog" class="note-dialog" aria-labelledby="note-title">
+    <button class="dialog-close" type="button" data-close aria-label="Close the secret note"><svg aria-hidden="true"><use href="#i-close"/></svg></button>
+    <div class="note-ornament" aria-hidden="true">
+      <svg class="note-icon" viewBox="0 0 24 24"><use href="#i-heart"/></svg>
+      <svg class="note-envelope" viewBox="0 0 120 89">
+        <path class="note-flap" d="M8 38 53 4a12 12 0 0 1 14 0l45 34Z" fill="url(#env-fold)" stroke="#83b0d6"/>
+        <rect class="note-sheet" x="24" y="17" width="72" height="62" rx="5" fill="#fff" stroke="#b9d5ed"/>
+        <path d="M8 38q0-5 5-5l47 28 47-28q5 0 5 5v40a7 7 0 0 1-7 7H15a7 7 0 0 1-7-7Z" fill="url(#env-paper)" stroke="#83b0d6"/>
+        <path d="m9 79 46-28a10 10 0 0 1 10 0l46 28" fill="none" stroke="#f4faff" stroke-width="1.2"/>
+        <use href="#i-heart" x="52" y="59" width="16" height="16" color="#3a79ae"/>
+      </svg>
+    </div>
+    <p class="eyebrow" id="note-label">A little secret</p>
+    <h2 id="note-title"></h2>
+    <p id="note-text"></p>
+    <p class="note-signature">Yours, James</p>
+  </dialog>
+
+  <dialog id="photo-dialog" class="photo-dialog" aria-labelledby="photo-title">
+    <button class="dialog-close light-close" type="button" data-close aria-label="Close the photograph"><svg aria-hidden="true"><use href="#i-close"/></svg></button>
+    <div class="photo-viewer">
+      <button class="photo-step photo-previous" type="button" data-photo-step="-1" aria-label="Previous photograph"><svg class="arrow-back" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      <figure class="lightbox-figure" id="lightbox-figure">
+        <div class="lightbox-art">
+          <img id="lightbox-image" alt="" hidden>
+          <div id="lightbox-empty" class="lightbox-empty">
+            <svg viewBox="0 0 420 188" aria-hidden="true"><use href="#cloud-bank"/></svg>
+            <p>This photograph is waiting to be added.</p>
+          </div>
+        </div>
+        <figcaption>
+          <p class="eyebrow" id="photo-number">01 / 02</p>
+          <h2 id="photo-title"></h2>
+          <p id="photo-caption"></p>
+        </figcaption>
+      </figure>
+      <button class="photo-step photo-next" type="button" data-photo-step="1" aria-label="Next photograph"><svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+    </div>
+  </dialog>
+
+  <dialog id="ending-dialog" class="ending-dialog" aria-labelledby="ending-title">
+    <div class="ending-sky" aria-hidden="true">
+      <svg viewBox="0 0 420 188"><use href="#cloud-bank"/></svg>
+      <svg viewBox="0 0 420 188"><use href="#cloud-bank"/></svg>
+    </div>
+    <svg class="ending-aperture" width="100%" height="100%" aria-hidden="true">
+      <defs>
+        <mask id="ending-aperture-mask">
+          <use class="ending-aperture-shape" href="#heart-outline" x="-100" y="-92" fill="#fff"/>
+        </mask>
+      </defs>
+      <rect width="100%" height="100%" fill="#a7d9f5" mask="url(#ending-aperture-mask)"/>
+    </svg>
+    <div class="ending-content">
+      <button class="ending-heart" type="button" id="ending-heart" aria-label="Open the heart and see the final message">
+        <svg viewBox="0 0 200 190" aria-hidden="true"><use href="#blue-heart"/></svg>
+      </button>
+      <div class="ending-message" id="ending-message" hidden>
+        <p class="eyebrow">One sky, always yours</p>
+        <h2 id="ending-title">Made with endless love, <em>by James.</em></h2>
+        <button class="action action-secondary" type="button" data-close>Return to the sunrise <svg aria-hidden="true"><use href="#i-arrow"/></svg></button>
+      </div>
+    </div>
+    <div class="particle-layer" id="ending-particles" aria-hidden="true"></div>
+  </dialog>
+
+  <noscript><p class="noscript">The story is available below. Enable JavaScript to open the secrets and use the media players.</p></noscript>
+</body>
+</html>
